@@ -1,0 +1,72 @@
+<div class="login-page">
+    <div class="container">
+        <h1>Login Page</h1>
+        <form action="/admin-login" method="POST">
+            <div class="form-content">
+                <label for="username">Username</label>
+                <input type="text" name="username" required placeholder="Enter username">
+            </div>
+            <div class="form-content">
+                <label for="password">Password</label>
+                <input type="password" name="password" required placeholder="Enter password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    p {
+        text-align: center;
+    }
+    .login-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container {
+        height: 360px;
+        width: 300px;
+        margin: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .form-content {
+        margin: 20px 0;
+    }
+    .btn {
+        display: block;
+        width: 70%;
+        padding: 10px;
+        background-color: rgb(186, 156, 215);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin: 20px auto 0;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(156, 125, 185);
+    }
+    .form-content input {
+        display: block;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+    }
+    .form-content label {
+        display: block;
+        font-weight: bold;
+        font-size: larger;
+        margin-bottom: 10px;
+    }
+</style>

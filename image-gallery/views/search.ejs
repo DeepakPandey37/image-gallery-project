@@ -1,0 +1,99 @@
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    #search-container {
+        padding: 40px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    #search-container h1 {
+        font-size: 2.5em;
+        color: #333;
+    }
+
+    #search-container p {
+        font-size: 1.2em;
+        color: #777;
+    }
+
+    
+    #card-section {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        padding: 20px;
+    }
+
+    #card-section .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #card-section .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        max-width: 18rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #card-section .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    #card-section .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #card-section .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #card-section .btn {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+    }
+</style>
+
+<div id="search-container">
+    <h1>Search Results for <%= eventName %> </h1>
+    <p><%= results.summary %></p>
+</div>
+
+
+<div id="card-section">
+    <div class="card-container">
+        <% if (results.length === 0) { %>
+            <p>No results found.</p>
+        <% } else { %>
+            <% results.forEach(post => { %>
+                <div class="card">
+                    <img src="<%= post.url %>" alt="Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.title %></h5>
+                        <p class="card-text"><%= post.summary %></p>
+                        <a href="<%= post.url %>" class="btn">Download here</a>
+                    </div>
+                </div>
+            <% }) %>
+        <% } %>
+    </div>
+</div>

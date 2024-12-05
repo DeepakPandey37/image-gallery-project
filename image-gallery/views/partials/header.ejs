@@ -1,0 +1,154 @@
+<style>
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #000000; 
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+
+ 
+  .header__logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+
+  .header__logo:hover {
+    color: #00bcd4; 
+  }
+
+ 
+  .header__nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    gap: 30px;
+  }
+
+  .header__nav li {
+    list-style: none;
+  }
+
+  .header__nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .header__nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00bcd4;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .header__nav a:hover {
+    color: #00bcd4;
+    transform: translateY(-2px); 
+  }
+
+  .header__nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  
+  .header__button {
+    display: flex;
+    align-items: center;
+  }
+
+  .add-post-btn {
+    padding: 12px 30px;
+    background-color: #080201; 
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .add-post-btn:hover {
+    background-color: #1d8977; 
+    transform: translateY(-2px); 
+  }
+
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 15px;
+    }
+
+    .header__nav ul {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .header__button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .add-post-btn {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <a href="/" class="header__logo">Deep-logo</a>
+  
+  <nav class="header__nav">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/about">About</a></li>
+    </ul> 
+  </nav>
+
+  <div class="header__button">
+    <a href="/add" class="add-post-btn">Add Post</a>
+  </div>
+</header>
