@@ -85,10 +85,10 @@ Add Post: Click on the "Add Post" button in the navigation bar, which will redir
 ![Add Event Screenshot](./screenshots/add-event.jpg)
 
 ###Cards 
-![cards](./screenshots/add-event.jpg)
+![cards](./screenshots/cards.jpg)
 
 ###Login-page
-![login-page](./screenshots/add-event.jpg)
+![login-page](./screenshots/login-page.jpg)
 
 
 
