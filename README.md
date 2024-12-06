@@ -18,30 +18,6 @@ Backend:
 Node.js
 Express.js
 MongoDB (for storing event data)
-Mongoose (MongoDB object modeling) 
-
-Thanks for the detailed information! Based on what you've shared, I’ll create a README structure for your project, WebX10, and include all the key sections and details.
-
-WebX10 - Image Gallery & Event Posting App
-WebX10 is a dynamic web application built to allow users to view and post events. It features a responsive design with a navigation bar, event search functionality, and a form for users to add new events. The app utilizes Node.js, Express, MongoDB, and EJS to create an efficient and interactive user experience.
-
-Features
-Responsive Design: Mobile-friendly layout for easy access on any device.
-Event Listing: Display event posts as interactive CSS cards with image previews.
-Search Functionality: Search for events by name, and display matching results.
-User Authentication: Login functionality for users to add new event posts.
-Add Event Form: After logging in, users can submit event details, including title, event name, summary, and image URL.
-Navigation Bar: Includes links to Home, Contact, and About pages, along with an "Add Post" button that redirects to the login page.
-Technologies Used
-Frontend:
-HTML
-CSS
-JavaScript
-EJS (Embedded JavaScript Templates)
-Backend:
-Node.js
-Express.js
-MongoDB (for storing event data)
 Mongoose (MongoDB object modeling)
 Installation
 To get started with WebX10, follow the instructions below:
