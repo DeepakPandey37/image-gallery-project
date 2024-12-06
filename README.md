@@ -78,7 +78,7 @@ Add Post: Click on the "Add Post" button in the navigation bar, which will redir
 
 ### Event Search Page
 
-![Event Search Screenshot](./screenshots/event-search.png)
+![Event Search Screenshot](../screenshots/event-search.png)
 
 ### Add Event Form
 
