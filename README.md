@@ -74,19 +74,19 @@ Add Post: Click on the "Add Post" button in the navigation bar, which will redir
 
 ### Home Page
 
-![Home Page Screenshot](./screenshots/home-page.png)
+![Home Page Screenshot](./image-gallery/screenshots/home-page.png)
 
 ### Event Search Page
 
-![Event Search Screenshot](./screenshots/event-search.png)
+![Event Search Screenshot](./image-gallery/screenshots/event-search.png)
 
 ### Add Event Form
 
-![Add Event Screenshot](./screenshots/add-event.png)
+![Add Event Screenshot](./image-gallery/screenshots/add-event.png)
 
 ### Cards
 
-![Cards Screenshot](./screenshots/cards.png)
+![Cards Screenshot](./image-gallery/screenshots/cards.png)
 
 ### Login Page
 
